@@ -1,0 +1,416 @@
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp
+$ touch index.html
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp
+$ touch app.js
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp
+$ git init
+Initialized empty Git repository in C:/Users/taesu/Desktop/Gitmyapp/.git/
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git config --global user.name 'Tae S'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git config --global user.email 'taesmail@gmail.com'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ status
+bash: status: command not found
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add *.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git commit
+[master (root-commit) f9514a8] Initial commit
+ 2 files changed, 8 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   app.js
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git commit -m 'added stuff to app.js'
+[master 4803e99] added stuff to app.js
+ 1 file changed, 1 insertion(+)
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ touch .gitignore
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ touch log.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   dir1/test 1 text file.txt
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git branch tsbranch
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git commit -m 'added dir1 ignoring dir2'
+[master 3e7794a] added dir1 ignoring dir2
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 dir1/test 1 text file.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git checkout tsbranch
+Switched to branch 'tsbranch'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ touch tsbranch.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ git status
+On branch tsbranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        dir2/
+        log.txt
+        tsbranch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ git add .
+warning: LF will be replaced by CRLF in log.txt.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ git commit -m 'tsbranch stuff'
+[tsbranch 974a5da] tsbranch stuff
+ 3 files changed, 3 insertions(+)
+ create mode 100644 dir2/test 2 text file.txt
+ create mode 100644 log.txt
+ create mode 100644 tsbranch.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ git status
+On branch tsbranch
+nothing to commit, working tree clean
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (tsbranch)
+$ git checkout master
+Switched to branch 'master'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git merge tsbranch
+Merge made by the 'recursive' strategy.
+ dir2/test 2 text file.txt | 1 +
+ log.txt                   | 1 +
+ tsbranch.txt              | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 dir2/test 2 text file.txt
+ create mode 100644 log.txt
+ create mode 100644 tsbranch.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git remote add origin https://github.com/taesgit/samples.git
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git remote
+origin
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (20/20), 1.54 KiB | 92.00 KiB/s, done.
+Total 20 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/taesgit/samples.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ touch README.md
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git commit -m 'add README'
+[master e21ef47] add README
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 111.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/taesgit/samples.git
+   d9fd55b..e21ef47  master -> master
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git pull
+Already up to date.
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git rm --cached log.txt
+rm 'log.txt'
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ status
+bash: status: command not found
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    log.txt
+
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git reset HEAD log.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git push
+Everything up-to-date
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/taesgit/samples
+   e21ef47..c6a1397  master     -> origin/master
+Updating e21ef47..c6a1397
+Fast-forward
+ dir1/test 1 text file.txt | 1 -
+ dir2/test 2 text file.txt | 1 -
+ log.txt                   | 1 -
+ tsbranch.txt              | 1 -
+ 4 files changed, 4 deletions(-)
+ delete mode 100644 dir1/test 1 text file.txt
+ delete mode 100644 dir2/test 2 text file.txt
+ delete mode 100644 log.txt
+ delete mode 100644 tsbranch.txt
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$ status
+bash: status: command not found
+
+taesu@LAPTOP-RKVVFREB MINGW64 ~/Desktop/Gitmyapp (master)
+$
+
